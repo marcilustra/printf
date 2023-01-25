@@ -3,6 +3,30 @@
 #include "main.h"
 
 /**
+  * format_select - format selector for _printf
+  * @format: format (char, string, int, decimal)
+  * Return: specified format(Succ) / NULL(still Succ) ;
+  */
+
+int (*format_select(const char *format))(va_list)
+{
+	unsigned int i = 0;
+	_format _f[] = {
+		{"c", print_char},
+		{"s", print_string},
+		{NULL, NULL}
+	};
+
+	while (_f[i].c)
+	{
+		if (_f[i].c[0] == (*format))
+			return (_f[i].f);
+		i++;
+	}
+	return (NULL);
+}
+
+/**
   * _printf - print string as per specified format (see format_selector).
   * @format: format (i, c, s)
   * Return: output size(Succ)
