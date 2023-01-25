@@ -1,1 +1,1 @@
-An implementation of printf from scratch.
+A printf implementation from scratch by Katana && Kemei
