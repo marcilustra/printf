@@ -14,7 +14,7 @@ int (*format_select(const char *format))(va_list)
 	_format _f[] = {
 		{"c", print_char},
 		{"s", print_string},
-		{"d", print_decimal},
+		/*{"d", print_decimal},*/
 		{NULL, NULL}
 	};
 
