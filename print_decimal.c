@@ -7,7 +7,7 @@
 * in the form n.n... e.g 3.1415...
 *
 * @d: integer to format into a decimal
-* Return: dec (Succ)
+* Return: Decimal
 */
 
 int print_decimal(va_list d)
