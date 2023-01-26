@@ -23,7 +23,6 @@ int print_char(va_list c)
  *
  * Return: 1(Succ).
  */
-
 int print_percentage(void)
 {
 	_putchar('%');
