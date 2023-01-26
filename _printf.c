@@ -10,11 +10,11 @@ int (*format_select(const char *format))(va_list)
 {
 	unsigned int i = 0;
 	_format _f[] = {
-		("c", print_char),
-		("s", print_string),
-		("d", print_decimal),
-		("i", print_int),
-		(NULL, NULL)
+		{"c", print_char},
+		{"s", print_string},
+		{"d", print_decimal},
+		{"i", print_int},
+		{NULL, NULL}
 	};
 
 	while (_f[i].c)
