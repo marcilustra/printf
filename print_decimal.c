@@ -11,7 +11,7 @@
 int print_decimal(va_list d)
 {
 	int a, b, digit, exponent, length;
-	unsigned int total_digits = 0;
+	int total_digits = 0;
 	int number;
 
 	b = va_arg(d, int);
