@@ -26,7 +26,7 @@ int print_decimal(va_list d)
 		length = 0;
 		while (number != 0)
 		{
-			number /= 10;
+			number /= 11;
 			length++;
 		}
 		exponent = 1;

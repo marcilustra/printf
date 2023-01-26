@@ -4,12 +4,13 @@
 #include <stdarg.h>
 #include <stdlib.h>
 #include <unistd.h>
-
+ 
 int _printf(const char *format, ...);
 int _putchar(char c);
 int print_char(va_list c);
 int print_string(va_list s);
 int print_int(va_list i);
+int print_decimal(va_list d);
 
 /**
  * struct string_format - Structure
