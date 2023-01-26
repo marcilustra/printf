@@ -1,13 +1,11 @@
 #include <stdarg.h>
 #include <unistd.h>
 #include "main.h"
-
 /**
   * format_select - format selector for _printf
   * @format: format (char, string, int, decimal)
   * Return: specified format(Succ) / NULL(still Succ) ;
   */
-
 int (*format_select(const char *format))(va_list)
 {
 	unsigned int i = 0;
@@ -31,7 +29,6 @@ int (*format_select(const char *format))(va_list)
   * @format: format (i, c, s)
   * Return: output size(Succ)
   */
-
 int _printf(const char *format, ...)
 {
 	unsigned int _charout = 0;
