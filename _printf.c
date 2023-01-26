@@ -34,7 +34,7 @@ int (*format_select(const char *format))(va_list)
 
 int _printf(const char *format, ...)
 {
-	int _charout = 0;
+	unsigned int _charout = 0;
 	unsigned int i = 0;
 	va_list ap;
 	int (*f)(va_list);
