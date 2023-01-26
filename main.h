@@ -11,6 +11,7 @@ int print_char(va_list c);
 int print_string(va_list s);
 int print_int(va_list i);
 int print_decimal(va_list d);
+int (*format_select(const char *format))(va_list);
 
 /**
  * struct string_format - Structure
